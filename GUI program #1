@@ -1,0 +1,10 @@
+import tkinter as tk
+
+def show_saying():
+    root = tk.Tk()
+    root.title("Favorite Saying")
+    label = tk.Label(root, text="The only limit to our realization of tomorrow is our doubts of today.")
+    label.pack(pady=20)
+    root.mainloop()
+
+show_saying()

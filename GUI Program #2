@@ -1,0 +1,22 @@
+import tkinter as tk
+
+
+def show_info():
+    info_label.config(text="Name: John Doe\nAddress: 123 Main St, Anytown, USA")
+
+def quit_app():
+    root.destroy()
+
+root = tk.Tk()
+root.title("Show Info")
+
+info_label = tk.Label(root, text="")
+info_label.pack(pady=20)
+
+show_info_button = tk.Button(root, text="Show Info", command=show_info)
+show_info_button.pack(pady=5)
+
+quit_button = tk.Button(root, text="Quit", command=quit_app)
+quit_button.pack(pady=5)
+
+root.mainloop()
